@@ -1,0 +1,46 @@
+<form bindsubmit="subParm" report-submit>
+
+  <view class="container" style="padding:0;">
+
+
+
+    <view class="input-wrap">
+      <label>标题:</label>
+      <input type='text' placeholder='请输入标题' name="title"></input>
+    </view>
+
+
+    <view class="input-wrap">
+      <label>详情:</label>
+      <textarea placeholder='详情' name="secondhouse_decribe"></textarea>
+    </view>
+
+
+    <view class="main">
+      <view class="title">
+        封面图上传
+
+      </view>
+      <view class="imglist">
+        <view class="imgitem">
+          <image src="/images/pub.png" bindtap='upload1'></image>
+
+        </view>
+
+      </view>
+    </view>
+
+
+    <view class="weixinmao-float">
+      <view class="weixinmao-foot">
+        <button class="footer" formType="submit">立即发布</button>
+      </view>
+
+    </view>
+
+
+  </view>
+
+
+
+</form>

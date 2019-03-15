@@ -1,0 +1,117 @@
+<!--pages/user/user.wxml-->
+<view class="page">
+  <view class='top-box'>
+    <image class="top-box-userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <view class='top-box-userinfo'>
+      <text class='top-box-nickName'>{{userInfo.nickName}}阿斯顿发生的发生放大水电费阿斯顿发生的发生放大水电费</text>
+      <text class='authentication'>申请认证</text>
+      <text class="iconfont icon-jiantou opsition"></text>
+    </view>
+  </view>
+  <view class='user-info-a'>
+    <view class='user-info-box'>
+      <text class='user-info-num'>30</text>
+      <text class='user-info-tit'>订单</text>
+    </view>
+    <view class='user-info-box'>
+      <text class='user-info-num'>30</text>
+      <text class='user-info-tit'>关注</text>
+    </view>
+    <view class='user-info-box'>
+      <text class='user-info-num'>30</text>
+      <text class='user-info-tit'>粉丝</text>
+    </view>
+    <view class='user-info-box'>
+      <text class='user-info-num'>30</text>
+      <text class='user-info-tit'>受阅</text>
+    </view>
+  </view>
+  <view class='user-info-b'>
+    <view class='user-memu'>
+      <view class='user-memu-icon'>
+        <image class='user-memu-icon-img' src='../../images/icons/collection.png'></image> 
+      </view>  
+      <text class='user-memu-tit'>我的收藏</text>
+    </view>
+    <view class='user-memu'>
+      <view class='user-memu-icon'>
+        <image class='user-memu-icon-img' src='../../images/icons/comment.png'></image> 
+      </view>  
+      <text class='user-memu-tit'>我的评论</text>
+    </view>
+    <view class='user-memu'>
+      <view class='user-memu-icon'>
+        <image class='user-memu-icon-img' src='../../images/icons/thumbs-up.png'></image> 
+      </view>  
+      <text class='user-memu-tit'>我的点赞</text>
+    </view>
+    <view class='user-memu'>  
+      <view class='user-memu-icon'>
+        <image class='user-memu-icon-img' src='../../images/icons/browsing_history.png'></image> 
+      </view>    
+      <text class='user-memu-tit'>浏览历史</text>
+    </view>
+  </view>
+  <view class='cells-group'>
+    <view class='cells-item'>
+      <text class='cells-item-txt'>我的钱包</text>
+      <view class='cells-item-img-box'>
+        <image class='cells-item-img' src='../../images/icons/arrow-h.png'></image>
+      </view>
+    </view>
+    <view class='cells-item'>
+      <text class='cells-item-txt'>我的视频</text>
+      <view class='cells-item-img-box'>
+        <image class='cells-item-img' src='../../images/icons/arrow-h.png'></image>
+      </view>
+    </view>
+    <view class='cells-item'>
+      <text class='cells-item-txt'>我的文章</text>
+      <view class='cells-item-img-box'>
+        <image class='cells-item-img' src='../../images/icons/arrow-h.png'></image>
+      </view>
+    </view>
+    <view class='cells-item'>
+      <text class='cells-item-txt'>消息通知</text>
+      <view class='cells-item-img-box'>
+        <image class='cells-item-img' src='../../images/icons/arrow-h.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='cells-group'>
+    <view class='cells-item'>
+      <text class='cells-item-txt'>购物车</text>
+      <view class='cells-item-img-box'>
+        <image class='cells-item-img' src='../../images/icons/arrow-h.png'></image>
+      </view>
+    </view>
+    <view class='cells-item'>
+      <text class='cells-item-txt'>发现</text>
+      <view class='cells-item-img-box'>
+        <image class='cells-item-img' src='../../images/icons/arrow-h.png'></image>
+      </view>
+    </view>
+    <view class='cells-item'>
+      <text class='cells-item-txt'>任务中心</text>
+      <view class='cells-item-img-box'>
+        <image class='cells-item-img' src='../../images/icons/arrow-h.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='cells-group'>
+    <view class='cells-item'>
+      <text class='cells-item-txt'>用户反馈</text>
+      <view class='cells-item-img-box'>
+        <image class='cells-item-img' src='../../images/icons/arrow-h.png'></image>
+      </view>
+    </view>
+    <view class='cells-item'>
+      <text class='cells-item-txt'>系统设置</text>
+      <view class='cells-item-img-box'>
+        <image class='cells-item-img' src='../../images/icons/arrow-h.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+

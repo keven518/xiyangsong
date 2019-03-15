@@ -1,0 +1,197 @@
+page {
+  padding-bottom: 100rpx;
+}
+
+.title-icon {
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.title-icon i-icon {
+  margin-right: 20rpx;
+}
+
+.title-icon image {
+  width: 65rpx;
+  height: 65rpx;
+  border-radius: 50%;
+  float: right;
+}
+
+.video-wrap {
+  width: 100vw;
+  height: 100vh;
+}
+
+.top-wrap {
+  position: relative;
+  top: 0;
+  width: 100vw;
+  height: 30px;
+  padding: 17px 0 10px;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.top-icon {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 55rpx;
+  vertical-align: top;
+}
+
+.top-right-icon {
+  position: absolute;
+  top: 20rpx;
+  right: 40rpx;
+  width: 75rpx;
+  height: 75rpx;
+  border-radius: 50%;
+}
+
+.article {
+  padding: 30rpx 24rpx;
+  font-size: 28rpx;
+  color: #303030;
+}
+
+.article span {
+  font-weight: 600;
+  font-size: 32rpx;
+}
+
+.list {
+  padding: 5rpx 30rpx;
+  font-size: 26rpx;
+  color: #aaabad;
+}
+
+.common {
+  color: #aaabad;
+}
+
+.row-style {
+  border-bottom: 1rpx solid #aaabad;
+  padding: 24rpx 0;
+}
+
+.img-wrap {
+  text-align: center;
+}
+
+.del-wrap {
+  text-align: center;
+}
+
+.common-img {
+  width: 65rpx;
+  height: 65rpx;
+  border-radius: 50%;
+}
+
+.comm-content {
+  padding-top: 6rpx;
+  font-size: 28rpx;
+}
+
+.com {
+  margin-bottom: 8rpx;
+  word-break: break-all;
+}
+
+.time {
+  color: #777;
+}
+
+.comm-name {
+  color: #798ebe;
+}
+
+.bottom-comment {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  width: 100vw;
+  font-size: 30rpx;
+  border-top: 1rpx solid #e2e2e2;
+  background: #fff;
+}
+
+.send-btn {
+  position: absolute;
+  bottom: 14rpx;
+  width: 130rpx;
+  height: 60rpx;
+  border-radius: 100rpx;
+  text-align: center;
+  line-height: 60rpx;
+  margin-top: 17rpx;
+  font-size: 28rpx;
+  color: #fedbb2;
+  background: #ffbf7f;
+}
+
+.select-send-btn {
+  color: #fff;
+  background: #ff7f00;
+}
+
+.bottom-comment input {
+  padding: 20rpx 30rpx;
+  color: #aaa;
+}
+
+.share-btn {
+  display: inline-block;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0;
+  margin-left: 55rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.sharetop-icon {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.DetailsMask {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.sq {
+  width: 70%;
+  background-color: white;
+  text-align: center;
+  margin: 45% auto;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.sq .covert {
+  line-height: 200rpx;
+  letter-spacing: 2rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.sqbtn{
+  width: 100%;
+  float: left;
+  border-radius: 0 !important;
+  border: none!important;
+  font-size: 28rpx;
+  padding-top: 10rpx !important;
+  padding-bottom: 10rpx !important;
+  line-height: 60rpx;
+  border-color: white;
+  border-top-color: #ccc;
+}

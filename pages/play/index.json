@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "i-cell": "../../dist/cell/index",
+    "i-icon": "../../dist/icon/index",
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index"
+  },
+  "backgroundColor": "#2D2E33",
+  "navigationBarTitleText": "图文详情"
+}

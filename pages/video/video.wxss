@@ -1,0 +1,90 @@
+/* pages/video/video.wxss */
+/*瀑布流 https://www.cnblogs.com/sizhou/p/7219551.html*/
+
+.videoPage{
+  padding: 30rpx 20rpx;
+  background:#f5f5f5;
+}
+.video-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.video-item{
+  width: 49%;
+  height: 500rpx;
+  background: #fff;
+  margin-bottom: 16rpx;
+}
+.video-img{
+  height: 300rpx;
+  width: 100%;
+  background: #509;  
+  border-radius: 12rpx 12rpx 0 0;
+}
+.video-tit{
+  display: block;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60repx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.video-info{
+  line-height: 40rpx;
+  padding: 0 20rpx;
+  margin: 10rpx 0;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #999;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.video-dec{
+  width: 100%;
+  display: block;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  height: 50rpx;
+  margin-top: 20rpx; 
+}
+.user-info{
+  width: 65%;
+  float: left;
+  height: 100%;
+}
+.userPho{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 6rpx;
+  display: block;
+  float: left;
+  border-radius: 50%;
+}
+.comment{
+  margin-top: 10rpx;
+}
+.commentImg{  
+  width: 50rpx;
+  height: 50rpx;
+}
+.userName, .commentNum{
+  margin-left: 20rpx;
+  height: 50rpx;  
+  line-height: 50rpx;
+  font-size: 24rpx;
+}
+.comment{
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: flex;
+}

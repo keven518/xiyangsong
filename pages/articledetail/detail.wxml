@@ -1,0 +1,44 @@
+<!--pages/detail/detail.wxml-->
+<import src="wxParse/wxParse.wxml" />
+<view class='content'>
+  <view class='title'>{{title}}</view>
+  <navigator class='act-main-top' url='../userinfo/userinfo' hover-class='kv-hover'>
+    <view class='date'>{{date}}
+     <!-- <view class='cnt'>openid：{{openid}}</view> -->
+  <view class='cnt'>阅读量：{{cnt}}</view>
+  </view>
+  </navigator>
+  <view wx:if="{{audio}}" class="audio-box">
+    <audio src="{{audio}}" id="myAudio" controls></audio>
+  </view>
+  <view class="section tc" wx:if="{{video}}">
+    <video src="{{video}}"  controls ></video>
+  </view>
+  <view class='htmlContent'>
+    <template is="wxParse" data="{{wxParseData:detail.nodes}}" />
+  </view>
+</view>
+<view class='comments'>
+  <view class='commentList' wx:if="{{comments}}">
+    <view class='comment' wx:for='{{commentsList}}' wx:key="id">
+      <view class='avatar'>
+        <image src='{{item.agent}}'></image>
+      </view>
+      <view class='commentInfo'>
+        <view class='username'>
+          <view class='username-box'>{{item.username}}</view>
+          <view class='date'>{{item.post_time}}</view>
+        </view>
+        <view class='commentContent'>{{item.content}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='noComments' wx:else>暂无评论</view>
+</view>
+<view class='kv-box'></view>
+<form bindsubmit="formBindsubmit">
+  <view class='commentBar'>
+    <input class='commentInput' bindconfirm="searchSubmit" bindinput="inputTyping" value='{{commentContent}}' name="content" placeholder='请输入你的评论吧...' />
+    <button class='commentButton' formType="submit"><i class="iconfont icon-pinglun1"></i></button>
+  </view>
+</form>

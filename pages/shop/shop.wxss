@@ -1,0 +1,124 @@
+/* pages/shop/shop.wxss */
+@import '../../styles/public.wxss';
+.page {
+  font-family: '微软雅黑';
+  background: #f5f5f5;
+  padding: 0 20rpx;
+}
+.shop-category-box{
+  background: #fff;
+  padding: 40rpx 0;
+}
+.shop-category-layout{
+  display: flex;
+}
+.shop-category-layout:first-child{
+  margin-bottom: 20rpx;
+}
+.shop-category-item{
+  width: 150rpx;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+}
+.shop-category-item-img{
+  width: 90rpx;
+  height: 90rpx;
+}
+.shop-category-item-text{
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 24rpx;
+}
+.shop-hot{
+  background: #fff;
+  display: flex;
+}
+.shop-hot-item{
+  height: 280rpx;
+  flex: 1;
+  margin-right: 20rpx;
+  background: #ccc;
+}
+.shop-hot-item-img{
+  width: 100%;
+  height: 100%;
+}
+.shop-hot-item:last-child{
+  margin-right: 0;
+}
+.item1{
+}
+.shop-special{
+}
+.shop-specia-image{
+  width: 100%;
+  height:178rpx;
+}
+.goods-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.goods-item{
+  width: 49%;
+  height: 530rpx;
+  background: #fff;
+  margin-bottom: 16rpx;
+}
+.goods-img{
+  height: 300rpx;
+  width: 100%;
+  background: #509;  
+  border-radius: 12rpx 12rpx 0 0;
+}
+.goods-tit{
+  display: block;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60repx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.goods-info{
+  line-height: 40rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #999;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.goods-price{
+  display: block;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  margin-top: 0; 
+}
+.market-price{
+  display: inline-block;
+  font-size: 32rpx;
+  height: 20rpx;
+  line-height: 20rpx;
+  color: #e52f4d;
+}
+.original-price{
+  display: inline-block;
+  font-size: 24rpx;
+  height: 20rpx;
+  line-height: 20rpx;
+  padding-left: 20rpx; 
+  color: #999;
+  text-decoration: line-through;
+}

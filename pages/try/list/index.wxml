@@ -1,0 +1,19 @@
+<navigator url="../index" hover-class='none'>
+<view class="btn">我要发布</view>
+</navigator>
+<view class="container" style="padding:0">
+        <view class="news" >
+                  <view class="newslist">
+                        <view class="pic">
+                          <image src="/images/pub.png"></image>
+                        </view>
+                        <view class="title" >
+                          <view>测试</view>
+                          <view>2018-09-09</view>
+                        </view>
+                  </view>
+           
+                  
+        </view>
+<!--news end-->
+</view>

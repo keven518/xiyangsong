@@ -1,0 +1,190 @@
+<!--pages/video/video.wxml-->
+<view class='videoPage'>
+  <view class="video-group">
+    <view class="video-item" wx:for="{{arrlist}}" wx:key="">
+      <view class='item' bindtap='turndetail' data-type="{{item.type}}" data-id="{{item.id}}">
+        <image class='video-img' src='{{item.cover_image}}'></image>
+        <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+        <view class='video-dec'>
+          <view class='user-info'>
+            <image class='userPho' src="{{item.image}}"></image>
+            <text class='userName'>{{userInfo.nickName}}</text>
+          </view>
+          <view class='comment'>
+            <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+            <text class='commentNum'>23</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="video-item">
+      <image class='video-img' src='http://lizmedia.cn/Public/Home/default/xcx/z2.jpg'></image>
+      <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+      <view class='video-dec'>
+        <view class='user-info'>
+          <image class='userPho' src="{{userInfo.avatarUrl}}"></image>
+          <text class='userName'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='comment'>
+          <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+          <text class='commentNum'>23</text>
+        </view>
+      </view>
+    </view>
+    <view class="video-item">
+      <image class='video-img' src='http://lizmedia.cn/Public/Home/default/xcx/z3.jpg'></image>
+      <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+      <view class='video-dec'>
+        <view class='user-info'>
+          <image class='userPho' src="{{userInfo.avatarUrl}}"></image>
+          <text class='userName'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='comment'>
+          <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+          <text class='commentNum'>23</text>
+        </view>
+      </view>
+    </view>
+    <view class="video-item">
+      <image class='video-img' src='http://lizmedia.cn/Public/Home/default/xcx/z4.jpg'></image>
+      <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+      <view class='video-dec'>
+        <view class='user-info'>
+          <image class='userPho' src="{{userInfo.avatarUrl}}"></image>
+          <text class='userName'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='comment'>
+          <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+          <text class='commentNum'>23</text>
+        </view>
+      </view>
+    </view>
+    <view class="video-item">
+      <image class='video-img' src='http://lizmedia.cn/Public/Home/default/xcx/z5.jpg'></image>
+      <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+      <view class='video-dec'>
+        <view class='user-info'>
+          <image class='userPho' src="{{userInfo.avatarUrl}}"></image>
+          <text class='userName'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='comment'>
+          <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+          <text class='commentNum'>23</text>
+        </view>
+      </view>
+    </view>
+    <view class="video-item">
+      <image class='video-img' src='http://lizmedia.cn/Public/Home/default/xcx/z6.jpg'></image>
+      <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+      <view class='video-dec'>
+        <view class='user-info'>
+          <image class='userPho' src="{{userInfo.avatarUrl}}"></image>
+          <text class='userName'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='comment'>
+          <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+          <text class='commentNum'>23</text>
+        </view>
+      </view>
+    </view>
+    <view class="video-item">
+      <image class='video-img' src='http://lizmedia.cn/Public/Home/default/xcx/z7.jpg'></image>
+      <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+      <view class='video-dec'>
+        <view class='user-info'>
+          <image class='userPho' src="{{userInfo.avatarUrl}}"></image>
+          <text class='userName'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='comment'>
+          <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+          <text class='commentNum'>23</text>
+        </view>
+      </view>
+    </view>
+    <view class="video-item">
+      <image class='video-img' src='http://lizmedia.cn/Public/Home/default/xcx/z8.jpg'></image>
+      <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+      <view class='video-dec'>
+        <view class='user-info'>
+          <image class='userPho' src="{{userInfo.avatarUrl}}"></image>
+          <text class='userName'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='comment'>
+          <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+          <text class='commentNum'>23</text>
+        </view>
+      </view>
+    </view>
+    <view class="video-item">
+      <image class='video-img' src='http://lizmedia.cn/Public/Home/default/xcx/z1.jpg'></image>
+      <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+      <view class='video-dec'>
+        <view class='user-info'>
+          <image class='userPho' src="{{userInfo.avatarUrl}}"></image>
+          <text class='userName'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='comment'>
+          <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+          <text class='commentNum'>23</text>
+        </view>
+      </view>
+    </view>
+    <view class="video-item">
+      <image class='video-img' src='http://lizmedia.cn/Public/Home/default/xcx/z2.jpg'></image>
+      <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+      <view class='video-dec'>
+        <view class='user-info'>
+          <image class='userPho' src="{{userInfo.avatarUrl}}"></image>
+          <text class='userName'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='comment'>
+          <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+          <text class='commentNum'>23</text>
+        </view>
+      </view>
+    </view>
+    <view class="video-item">
+      <image class='video-img' src='http://lizmedia.cn/Public/Home/default/xcx/z3.jpg'></image>
+      <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+      <view class='video-dec'>
+        <view class='user-info'>
+          <image class='userPho' src="{{userInfo.avatarUrl}}"></image>
+          <text class='userName'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='comment'>
+          <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+          <text class='commentNum'>23</text>
+        </view>
+      </view>
+    </view>
+    <view class="video-item">
+      <image class='video-img' src='http://lizmedia.cn/Public/Home/default/xcx/z4.jpg'></image>
+      <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+      <view class='video-dec'>
+        <view class='user-info'>
+          <image class='userPho' src="{{userInfo.avatarUrl}}"></image>
+          <text class='userName'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='comment'>
+          <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+          <text class='commentNum'>23</text>
+        </view>
+      </view>
+    </view>
+    <view class="video-item">
+      <image class='video-img' src='http://lizmedia.cn/Public/Home/default/xcx/z5.jpg'></image>
+      <text class='video-info'>对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲对于那些家族有癌症史的人来讲</text>
+      <view class='video-dec'>
+        <view class='user-info'>
+          <image class='userPho' src="{{userInfo.avatarUrl}}"></image>
+          <text class='userName'>{{userInfo.nickName}}</text>
+        </view>
+        <view class='comment'>
+          <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+          <text class='commentNum'>23</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

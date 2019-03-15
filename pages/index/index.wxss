@@ -1,0 +1,162 @@
+ @import "/lib/style/font.wxss";
+ .header{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background: #f6f6f6;
+}
+.search-box{
+  width: 50px;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  line-height: 44px;
+}
+.search-box .iconfont{
+  font-size: 26px;
+}
+.menu{
+  flex: 1;
+  height: 50px;
+  background: #f6f6f6;
+  top: 0;
+  z-index: 1;
+  white-space: nowrap;
+}
+.sections{
+  width: 100%;
+  height: 45px;
+  background: #f6f6f6;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  white-space: nowrap;
+}
+.section{
+  height: 100%;
+  text-align: center;
+  color: #000;
+  line-height: 45px;
+  font-size: 18px;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.section.active{
+  color: #f00;
+}
+.articles{
+  margin-top: 45px;
+  width: 100%;
+}
+.article{
+  padding: 20rpx 30rpx;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  flex-direction: column;
+}
+
+.articleTit{
+  width: 100%;
+  line-height: 40rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  font-weight:600;
+  color: #333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.articleImgA{
+  width: 100%;
+  margin-top: 20rpx;
+}
+.articleInfo{
+  height: 40rpx;
+  width: 100%;
+  margin-top: 20rpx;
+}
+.articleChannel, .articleInfoTxt{
+  display: inline;
+  font-size: 24rpx;
+  color: #d53c3e;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.articleChannel{
+  color: #d53c3e;
+}
+.articleInfoTxt{
+  color: #999;
+  padding-left: 20rpx;
+}
+.left{
+  flex: 1;
+  height: 100%;
+  position: relative;
+  margin: 0 10px 0 0;
+  float: left;
+}
+
+.right{
+  width: 83px;
+  height: 100%;
+  position: relative;
+  margin: 0 15px 0 0;
+  float: right;
+  background: #ccc;
+}
+
+.title{
+  font-size: 20px;
+}
+
+.date{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.comment{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.cover{
+  width: 100%;
+  height: 100%;
+}
+
+.DetailsMask{width: 100%;height: 100%;background-color: black;background: rgba(0, 0, 0, 0.7);bottom: 0;position: fixed;z-index: 999;}
+.sq{
+  width:70%;
+  background-color:white;
+  text-align:center;
+  margin:45% auto;
+ border-radius:20rpx;
+ overflow:hidden;
+}
+.sq view{
+  line-height:200rpx;
+  letter-spacing:2rpx;
+
+}
+.sq button{
+  width:100%;
+  float:left;
+  border-radius:0!important;
+  font-size:28rpx;
+  padding-top:10rpx!important;
+  padding-bottom:10rpx!important;
+  line-height:60rpx;
+  border-color:white;
+  border-top-color:#ccc;
+}

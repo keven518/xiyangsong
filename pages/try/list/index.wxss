@@ -1,0 +1,81 @@
+
+
+.btn{
+  position: absolute;
+  top:10rpx;
+  width: 150rpx;
+  height: 50rpx;
+  right: 20rpx;
+  border: 1rpx solid #008842;
+  border-radius: 8rpx;
+  font-size:30rpx;
+  color: #008842;
+  text-align: center;
+  line-height: 50rpx;
+}
+.news{
+margin-top:10rpx;
+width:750rpx;
+background: #FFF;
+display: flex;
+flex-direction: column;
+
+}
+.news .newstitle{
+width:720rpx;
+height: 40rpx;
+line-height: 40rpx;
+margin-left:20rpx;
+font-size: .7rem;
+border-bottom: 1rpx solid #ccc;
+margin: 0 auto;
+
+}
+
+.news .newslist{
+display: flex;
+flex-direction: row;
+width:720rpx;
+margin: 0 auto;
+border-bottom: 1px solid #F2f2f2; 
+
+}
+
+.news .newslist .pic{
+width:30%;
+height: 180rpx;
+line-height: 180rpx;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+.news .newslist .pic image{
+ width:250rpx;
+ height: 150rpx;
+}
+
+.news .newslist .title{
+width:60%;
+flex-direction: column;
+display: flex;
+height: 150rpx;
+
+justify-content: space-between;
+}
+.news .newslist .title view{
+  padding-left: 5%;
+  text-align: left;
+}
+
+.news .newslist .title view:nth-child(1){
+font-size: .8rem;
+height: 40rpx;
+line-height: 40rpx;
+}
+.news .newslist .title view:nth-child(2){
+font-size: .7rem;
+height: 20rpx;
+line-height: 20rpx;
+
+
+}

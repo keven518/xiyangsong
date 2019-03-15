@@ -1,0 +1,38 @@
+<!--index.wxml-->
+ <scroll-view class='sections' scroll-x='true'>
+  <view class="section {{artId === item.id ? 'active' : ''}}" wx:for='{{newList}}' wx:key="id" wx:for-index='i' bindtap='onSectionClicked' data-id='{{item.id}}' data-index='{{i}}'>{{item.name}}</view>
+</scroll-view>  
+<!-- <view class='header'>
+  <view class='search-box'>
+    <i class="iconfont icon-sousuo"></i>
+  </view>
+  <view class='menu'>
+    <scroll-view class='sections' scroll-x='true'>
+      <view class="section {{artId === item.id ? 'active' : ''}}" wx:for='{{newList}}' wx:key="id" wx:for-index='i' bindtap='onSectionClicked' data-id='{{item.id}}' data-index='{{i}}'>{{item.name}}</view>
+    </scroll-view>
+  </view>
+</view> -->
+<scroll-view class='articles' style="width:100vw;height: calc(100vh - 45px)" scrollY="true" bindscrolltolower="scroll">
+<view >  
+  <view class='article' wx:for='{{articles}}' data-aid='{{item.id}}' wx:key="id" bindtap='onArticleClicked' >
+    <view class='articleTit'>{{item.title}}</view>
+    <image class='articleImgA' src='{{"http://lizmedia.cn"+item.litpic}}' mode="widthFix"></image>
+    <view class='articleInfo'>
+      <text class='articleChannel'>新闻</text>
+      <text class='articleInfoTxt'>阅读： 2013</text>
+      <text class='articleInfoTxt'>评论： 6783</text>
+    </view>
+  </view>
+</view>
+</scroll-view>
+
+
+
+  <view class="DetailsMask" style="display:{{showMd ? '' : 'none'}}">
+      <view class="sq">
+        <view>尚未授权！</view>
+        <!-- <button plain='true' style="border-right-color:#ccc;" hover-class='none' bindtap='close'>取消</button> -->
+        <button plain='true' style="color:#2894ff" hover-class='none' open-type='getUserInfo' bindgetuserinfo="check">点击授权</button>
+        <view style="clear:both"></view>
+      </view>
+      </view>

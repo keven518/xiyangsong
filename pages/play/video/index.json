@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "i-cell": "/dist/cell/index",
+    "i-input": "/dist/input/index",
+    "i-icon": "/dist/icon/index",
+    "i-row": "/dist/row/index",
+    "i-col": "/dist/col/index"
+  },
+  "navigationBarTitleText": "视频详情"
+}

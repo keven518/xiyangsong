@@ -1,0 +1,61 @@
+<view class="video-wrap">
+  <video src="{{data_info.video}}" poster='{{data_info.cover_image}}' style="width:100%;height:100%;" objectFit='cover' autoplay="true" loop="true" controls="false" show-progress="false" show-play-btn="false" show-fullscreen-btn="false">
+<cover-view class="DetailsMask" style="display:{{showMd ? '' : 'none'}}">
+      <cover-view class="sq">
+        <cover-view class="covert">尚未授权！</cover-view>
+        <!-- <button plain='true' style="border-right-color:#ccc;" hover-class='none' bindtap='close'>取消</button> -->
+        <cover-view class="cov"><button plain='true' style="color:#2894ff" hover-class='none' open-type='getUserInfo' bindgetuserinfo="check" class="sqbtn">点击授权</button></cover-view>
+      </cover-view>
+      </cover-view>
+  </video>
+</view>
+<view class="top-wrap" style="position:{{scrollTop > sysheight ? 'fixed': relative}}">
+  <image src="/images/{{data_info.is_support == 1 ? 'fullshoucang' : 'shoucang'}}.png" class="top-icon" bindtap="support" data-statu="{{data_info.is_support}}"></image>
+  <image src="/images/{{ismy == 1 ? 'delzp' : 'jubao'}}.png" class="top-icon" bindtap="{{ismy == 1 ? 'delzp' : 'jubao'}}" data-id="{{data_info.id}}"></image>
+  <view style="display:inline-block;vertical-align:top;">
+    <button open-type="share" class="share-btn" plain='true'>
+      <image src="/images/share.png" class="sharetop-icon"></image>
+    </button>
+  </view>
+
+  <image src="{{data_info.image}}" class="top-right-icon" bindtap='goprofile'></image>
+</view>
+<view style="width:100vw;height:57px;" wx:if="{{scrollTop > sysheight}}"></view>
+<view>
+  <view class="article">
+    <span>{{data_info.name}}:</span>
+    {{data_info.content}}
+  </view>
+  <view class="list">
+    <i-icon type="message" slot="icon" color="#C6C6C6" size="20" /> {{data_info.comment_num}} 评论
+  </view>
+  <view class="list" style="border-bottom:1rpx solid #AAABAD;padding-bottom:30rpx;">
+    <i-icon type="like" slot="icon" color="#C6C6C6" size="20" /> {{data_info.support}} 赞
+  </view>
+  <view class="common">
+    <i-row wx:for="{{data_info.comment}}" wx:key="unique" i-class="row-style">
+      <i-col span="4" i-class="img-wrap">
+        <image src="{{item.image}}" class="common-img"></image>
+      </i-col>
+      <i-col span="17" i-class="comm-content">
+        <view class="com comm-name">{{item.name}}</view>
+        <view class="com common-txt">{{item.content}}</view>
+        <view class="com time">{{item.time}}</view>
+      </i-col>
+      <i-col span="3" i-class="del-wrap">
+        <i-icon type="trash" slot="icon" color="#c6c6c6" size="28" wx:if="{{openid == item.openid}}" bindtap='delcommom' data-id="{{ item.id }}" data-index="{{ index }}" /></i-col>
+    </i-row>
+  </view>
+
+  <view class="bottom-comment">
+    <i-row>
+      <i-col span="{{isfocus ? 19 : 24}}">
+        <input placeholder='说点什么...' type="text" bindfocus="commfocus" bindblur="commblur" bindinput='inputcomm' confirm-type="send" bindconfirm="keysend" value="{{ inputtxt }}" cursor-spacing='20'></input>
+      </i-col>
+      <i-col span="5" wx:if="{{isfocus}}">
+        <view class="send-btn {{inputtxt.length > 0 ? 'select-send-btn' : ''}}" bindtap="keysend">发送</view>
+      </i-col>
+    </i-row>
+  </view>
+</view>
+
