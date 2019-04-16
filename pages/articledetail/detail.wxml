@@ -42,3 +42,11 @@
     <button class='commentButton' formType="submit"><i class="iconfont icon-pinglun1"></i></button>
   </view>
 </form>
+<view class="DetailsMask" style="display:{{showMd ? '' : 'none'}}">
+      <view class="sq">
+        <view>尚未授权！</view>
+        <!-- <button plain='true' style="border-right-color:#ccc;" hover-class='none' bindtap='close'>取消</button> -->
+        <button plain='true' style="color:#2894ff" hover-class='none' open-type='getUserInfo' bindgetuserinfo="check">点击授权</button>
+        <view style="clear:both"></view>
+      </view>
+      </view>

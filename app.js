@@ -29,10 +29,12 @@ App({
           wx.getUserInfo({
             success: function (res) {
               that.globalData.userInfo = res.userInfo
-              typeof cb == "function" && cb(that.globalData.userInfo);
+              
               //get user sessionKey
               //get sessionKey
-              that.getUserSessionKey(code);
+              that.getUserSessionKey(code, function(){
+                typeof cb == "function" && cb('ok');
+              });
             }
           });
         }
@@ -40,7 +42,7 @@ App({
     
   },
 
-  getUserSessionKey:function(code){
+  getUserSessionKey:function(code,cb){
     //用户的订单状态
     var that = this;
     wx.request({
@@ -63,10 +65,10 @@ App({
           });
           return false;
         }
-
         that.globalData.userInfo['sessionId'] = data.session_key;
         that.globalData.userInfo['openid'] = data.openid;
         that.onLoginUser();
+        typeof cb == "function" && cb(1);
       },
       fail:function(e){
         wx.showToast({

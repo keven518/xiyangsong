@@ -20,7 +20,12 @@ page {
 
 .video-wrap {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 94.5rpx);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #000;
 }
 
 .top-wrap {

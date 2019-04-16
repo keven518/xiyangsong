@@ -33,13 +33,19 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 1,
 			"list": [
 				{
 					"id": 0,
 					"name": "试用报告",
 					"pathName": "pages/try/index",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/articledetail/detail",
+					"scene": null
 				}
 			]
 		}
