@@ -16,4 +16,20 @@
 .typeTree .category image{ height: 85px;}
 .typeTree .category{ padding-bottom: 10px;}
 .item text{ padding-bottom: 10px; display: block;}
+.publish{
+    padding: 300rpx 0 0 0;
+}
+.publish-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80rpx;
+    font-size: 40rpx;
+    margin-bottom: 20rpx;
+}
+.box-icon{
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 20rpx;
+}
 

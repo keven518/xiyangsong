@@ -16,7 +16,7 @@
   <view class="gmxx">
     <view><span class="jiage">¥：{{itemData.price_yh}}</span> <span class="c6 fl_r font_14" style='color:#ccc'>库存：{{itemData.num}}</span> </view>
      <button open-type="share" class="share-btn" plain="true" style="display:none">
-                        <image style="width: 40rpx;height: 40rpx" src="/images/icon-share.png"/>
+                        <image style="width: 40rpx;height: 40rpx" src="http://lizmedia.cn/Public/Home/default/xcx/icon-share.png"/>
                         <view style="color: #888">分享</view>
                     </button>
     <view class="font_14 c6">品牌：{{itemData.brand}}</view>

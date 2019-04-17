@@ -1,0 +1,27 @@
+page{
+  font-size: 28rpx;
+}
+.upvideo{
+  width: 100rpx;
+  height: 100rpx;
+  display: inline-block;
+}
+.right-wrap{
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  overflow: hidden;
+}
+.title{
+  text-align: center;
+  margin: 35rpx 0;
+  margin-top: 60rpx;
+}
+.selectclass{
+color:#495060!important;
+}
+.scbtn{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

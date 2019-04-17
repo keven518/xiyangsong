@@ -18,9 +18,9 @@
     <view class='articleTit'>{{item.title}}</view>
     <image class='articleImgA' src='{{"http://lizmedia.cn"+item.litpic}}' mode="widthFix"></image>
     <view class='articleInfo'>
-      <text class='articleChannel'>新闻</text>
-      <text class='articleInfoTxt'>阅读： 2013</text>
-      <text class='articleInfoTxt'>评论： 6783</text>
+      <text class='articleChannel'>{{item.category_name}}</text>
+      <text class='articleInfoTxt'>阅读： {{item.click}}</text>
+      <text class='articleInfoTxt'>评论： {{item.comment_num}}</text>
     </view>
   </view>
 </view>

@@ -6,28 +6,28 @@ Page( {
     orderInfo:{},
     projectSource: 'https://github.com/liuxuanqiang/wechat-weapp-mall',
     userListInfo: [ {
-        icon: '../../images/iconfont-dingdan.png',
+        icon: 'http://lizmedia.cn/Public/Home/default/xcx/iconfont-dingdan.png',
         text: '我的订单',
         isunread: true,
         unreadNum: 2
       }, {
-        icon: '../../images/iconfont-card.png',
+        icon: 'http://lizmedia.cn/Public/Home/default/xcx/iconfont-card.png',
         text: '我的代金券',
         isunread: false,
         unreadNum: 2
       }, {
-        icon: '../../images/iconfont-icontuan.png',
+        icon: 'http://lizmedia.cn/Public/Home/default/xcx/iconfont-icontuan.png',
         text: '我的拼团',
         isunread: true,
         unreadNum: 1
       }, {
-        icon: '../../images/iconfont-shouhuodizhi.png',
+        icon: 'http://lizmedia.cn/Public/Home/default/xcx/iconfont-shouhuodizhi.png',
         text: '收货地址管理'
       }, {
-        icon: '../../images/iconfont-kefu.png',
+        icon: 'http://lizmedia.cn/Public/Home/default/xcx/iconfont-kefu.png',
         text: '联系客服'
       }, {
-        icon: '../../images/iconfont-help.png',
+        icon: 'http://lizmedia.cn/Public/Home/default/xcx/iconfont-help.png',
         text: '常见问题'
       }],
        loadingText: '加载中...',

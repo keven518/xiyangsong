@@ -1,0 +1,47 @@
+<view class="selectclass">
+  <picker bindchange="bindPickerChange" range="{{classify.classify}}">
+    <i-input value="{{classify.classify[selectindex]}}" title="请选择分类" disabled />
+
+  </picker>
+</view>
+<view class="up-wrap">
+
+  <i-input type="textarea" placeholder="说点什么吧(最多30个字符)" maxlength='30' bind:change='detail' />
+  <view class="selectimg">
+    <view class="imgs" wx:if="{{selectimgs}}" wx:for="{{selectimgs}}" wx:key="unique">
+      <image style="width:100%;" mode='widthFix' src="{{item}}"></image>
+       <view class="closeicon" bindtap='delimg' data-index="{{index}}">x</view>
+    </view>
+    <view class="grid" bindtap="chooseimg" wx:if="{{selectimgs.length < 9}}">
+      <i-icon type="add" size="28" color="#999"></i-icon>
+      <span>选择图片</span>
+    </view>
+  </view>
+</view>
+
+
+<i-panel title="选择封面图" >
+ <view class="selectimg">
+ <view class="imgs" wx:if="{{cover_img}}" >
+      <image style="width:100%;" mode='widthFix' src="{{cover_img}}"></image>
+    </view>
+    <view class="grid" bindtap="chooseCoverImg">
+      <i-icon type="add" size="28" color="#999"></i-icon>
+      <span>选择图片</span>
+    </view>
+    </view>
+</i-panel>
+
+
+
+
+
+
+
+
+
+
+
+<view class="scbtn">
+  <i-button bind:click="shangchuan" type="success" long="true">上传并提交</i-button>
+</view>

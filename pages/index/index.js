@@ -59,6 +59,7 @@ Page({
     })
   },
   onLoad: function () {
+    wx.showShareMenu();  // 新增分享功能
     var that= this;
     this.tuijian();
     that.checkUser();

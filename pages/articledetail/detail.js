@@ -119,7 +119,7 @@ Page({
     }
     // 加载文章
     wx.request({
-      url: 'https://lizmedia.cn/xyhcms/index.php?s=/kv/showArticle/id/' + options.art_id,
+      url: 'https://lizmedia.cn/xyhcms/index.php?s=/kv/showArticle/id/5061', // options.art_id
       data: { open_id: app.globalData.userInfo.openid },
       method: 'GET',
       header: {

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "图文上传",
+  "usingComponents":{
+    "i-button": "/dist/button/index",
+    "i-icon": "/dist/icon/index",
+    "i-panel": "/dist/panel/index",
+    "i-input": "/dist/input/index"
+  }
+}

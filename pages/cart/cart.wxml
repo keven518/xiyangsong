@@ -17,7 +17,7 @@
 <!--样式-->  
 <view class="container carts-list" wx:if="{{carts==''}}">
     <view class="pp">
-         <image class="kong" src="../../images/cart.jpg" mode="aspectFill"/>
+         <image class="kong" src="http://lizmedia.cn/Public/Home/default/xcx/cart.jpg" mode="aspectFill"/>
          <view class="cla">购物车空空如也</view>
     </view>
 </view>
