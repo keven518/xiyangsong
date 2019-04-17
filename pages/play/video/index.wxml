@@ -1,5 +1,5 @@
 <view class="video-wrap">
-  <video src="{{data_info.video}}" poster='{{data_info.cover_image}}' style="width:100%;height:100%;" objectFit='cover' autoplay="true" loop="true" controls="false" show-progress="false" show-play-btn="false" show-fullscreen-btn="false">
+  <video src="{{data_info.video}}" poster='{{data_info.cover_image}}' style="width:100%;height:100%" objectFit='contain' autoplay="true" loop="true" controls="false" show-progress="false" show-play-btn="false" show-fullscreen-btn="false">
 <cover-view class="DetailsMask" style="display:{{showMd ? '' : 'none'}}">
       <cover-view class="sq">
         <cover-view class="covert">尚未授权！</cover-view>

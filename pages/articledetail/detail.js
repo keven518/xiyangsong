@@ -24,6 +24,7 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     openid: '',
+    showMd: false,
   },
   searchSubmit: function (e) {
   },
@@ -84,71 +85,92 @@ Page({
     
     var that = this;
     // 
-    if (app.globalData.userInfo) {
-      
-      this.setData({
-        nickName: app.globalData.userInfo.nickName,
-        avatarUrl: app.globalData.userInfo.avatarUrl,
-        hasUserInfo: true,
-        openid: app.globalData.userInfo.openid
-      })
-    } else if (this.data.canIUse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          nickName: res.userInfo.nickName,
-          avatarUrl: res.userInfo.avatarUrl,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-         
+    wx.getUserInfo({
+      success: r => {
+        if (app.globalData.userInfo) {
+
           this.setData({
-            nickName: res.userInfo.nickName,
-            avatarUrl: res.userInfo.avatarUrl,
-            hasUserInfo: true
+            nickName: app.globalData.userInfo.nickName,
+            avatarUrl: app.globalData.userInfo.avatarUrl,
+            hasUserInfo: true,
+            openid: app.globalData.userInfo.openid
+          })
+        } else if (this.data.canIUse) {
+          // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+          // 所以此处加入 callback 以防止这种情况
+
+          app.userInfoReadyCallback = res => {
+            this.setData({
+              nickName: res.userInfo.nickName,
+              avatarUrl: res.userInfo.avatarUrl,
+              hasUserInfo: true
+            })
+          }
+        } else {
+          // 在没有 open-type=getUserInfo 版本的兼容处理
+          wx.getUserInfo({
+            success: res => {
+              app.globalData.userInfo = res.userInfo
+
+              this.setData({
+                nickName: res.userInfo.nickName,
+                avatarUrl: res.userInfo.avatarUrl,
+                hasUserInfo: true
+              })
+            }
           })
         }
-      })
-    }
-    // 加载文章
-    wx.request({
-      url: 'https://lizmedia.cn/xyhcms/index.php?s=/kv/showArticle/id/5061', // options.art_id
-      data: { open_id: app.globalData.userInfo.openid },
-      method: 'GET',
-      header: {
-        'content-type': 'application/json'
-      },
-      success: function (res) {
-       
-        // 记录阅读量
-        that.addReadNum(app.globalData.userInfo.openid, options.art_id);
-        that.setData({
-          artId: res.data.data.id,
-          title: res.data.data.title,
-          detail: res.data.data.content,
-          date: res.data.data.update_time,
-          cnt: res.data.data.click,
-          video: res.data.data.video,
-          audio: res.data.data.audio,
-          author: res.data.data.author,
-          openId: app.globalData.userInfo.openid,
-          copyfrom: res.data.data.copyfrom,
+        // 加载文章
+        wx.request({
+          url: 'https://lizmedia.cn/xyhcms/index.php?s=/kv/showArticle/id/' + options.art_id,
+          data: { open_id: app.globalData.userInfo.openid },
+          method: 'GET',
+          header: {
+            'content-type': 'application/json'
+          },
+          success: function (res) {
+
+            // 记录阅读量
+            that.addReadNum(app.globalData.userInfo.openid, options.art_id);
+            that.setData({
+              artId: res.data.data.id,
+              title: res.data.data.title,
+              detail: res.data.data.content,
+              date: res.data.data.update_time,
+              cnt: res.data.data.click,
+              video: res.data.data.video,
+              audio: res.data.data.audio,
+              author: res.data.data.author,
+              openId: app.globalData.userInfo.openid,
+              copyfrom: res.data.data.copyfrom,
+            })
+            WxParse.wxParse('detail', 'html', res.data.data.content, that, 5);
+          }
         })
-        WxParse.wxParse('detail', 'html', res.data.data.content, that, 5);
+
+        // 加载评论
+        that.addComment(options.art_id)
+      },
+      fail: f =>{
+        this.setData({
+          showMd: true
+        })
       }
     })
-
-    // 加载评论
-    that.addComment(options.art_id)
+    
+    
   },
-
+  check(e){
+    let userinfo = e.detail.userInfo || 0
+    if(userinfo){
+      app.getUserInfo(r =>{
+        this.setData({
+          showMd: false
+        })
+        this.onLoad(this.options)
+      })
+    }
+  },
   /**
    * 记录阅读量
    */
