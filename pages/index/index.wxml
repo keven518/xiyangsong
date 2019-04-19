@@ -14,6 +14,7 @@
 </view> -->
 <scroll-view class='articles' style="width:100vw;height: calc(100vh - 45px)" scrollY="true" bindscrolltolower="scroll">
 <view >  
+  <text class='weather'>{{weatherDate.basic.location}} 天气：{{weatherDate.now.cond_txt}}温度：{{weatherDate.now.tmp}}风向：{{weatherDate.now.wind_dir}}风力：{{weatherDate.now.wind_sc}}风速：{{weatherDate.now.wind_spd}}公里/小时相对湿度：{{weatherDate.now.hum}}云量：{{weatherDate.now.cloud}}</text>
   <view class='article' wx:for='{{articles}}' data-aid='{{item.id}}' wx:key="id" bindtap='onArticleClicked' >
     <view class='articleTit'>{{item.title}}</view>
     <image class='articleImgA' src='{{"http://lizmedia.cn"+item.litpic}}' mode="widthFix"></image>

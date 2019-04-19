@@ -12,6 +12,7 @@ Page({
     showMd:false,
     count:0,
     page: 1,
+    weatherDate: {}
   },
   onArticleClicked(e) {
     // 点击文章列表，跳转详情页面
@@ -59,6 +60,31 @@ Page({
     })
   },
   onLoad: function () {
+    wx.getLocation({
+      type: 'gcj02', // 返回坐标的格式
+      success: res => {
+        // 此处只能获取到当前位置的经纬度（坐标）
+        console.log('zb-res: ', res);
+        wx.request({
+          url: 'https://free-api.heweather.net/s6/weather/now',
+          header: {
+            'Content-Type': 'application/json'
+          },
+          data: {
+            location: `${res.latitude},${res.longitude}`,
+            lang: 'zh',
+            unit: 'm',
+            key: '3d4e825b909a479ba0e176db28937466'
+          },
+          success: wRes => {
+            console.log('wRes: ', wRes.data.HeWeather6[0])
+            that.setData({
+              weatherDate: wRes.data.HeWeather6[0]
+            })
+          }
+        })
+      },
+    })
     wx.showShareMenu();  // 新增分享功能
     var that= this;
     this.tuijian();

@@ -41,6 +41,12 @@
   display: inline-block;
   padding: 0 10px;
 }
+.weather{
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing:border-box;
+  font-size: 24rpx;
+}
 
 .section.active{
   color: #f00;
