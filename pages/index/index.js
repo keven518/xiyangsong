@@ -53,6 +53,11 @@ Page({
       },
       success: (res)=>{
         console.log('tj-res: ', res)
+        res.data.data.click *= 10
+        res.data.data.map((data) => {
+          data.click = data.click * 10 + Math.floor(Math.random() * 10)
+        })
+        console.log('tj-res3: ', res)
         this.setData({
           articles: res.data.data
         })
