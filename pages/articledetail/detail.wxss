@@ -11,6 +11,9 @@
   background: #fff;
   border-top: 1px solid #eee;
 }
+.wxParse-p{
+  margin-bottom: 20rpx;
+}
 .audio-box{
   display: flex;
   justify-content: center;

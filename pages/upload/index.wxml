@@ -1,0 +1,29 @@
+<view>
+  <view class="right-wrap" style="width:calc(100vw - {{sysinfo.windowWidth}}rpx);">
+      <i-button bind:click="chooseimg" type="info">选择封面图</i-button>
+      <image src="{{cover_image}}" style="width:90%;" mode='widthFix'></image>
+   
+  </view>
+
+  <view class="upvideo" style="width:{{sysinfo.windowWidth}}rpx;height:{{sysinfo.windowHeight}}rpx">
+    <video src="{{tempurl}}" style="width:100%;height:100%;"></video>
+  </view>
+
+</view>
+    <view class="selectclass">
+      <picker bindchange="bindPickerChange" range="{{classify.classify}}">
+      <i-input value="{{classify.classify[selectindex]}}" title="请选择分类" disabled />
+        
+      </picker>
+    </view>
+
+ <i-input type="textarea" placeholder="说点什么吧(最多30个字符)" maxlength='30' bind:change='detail'/>
+
+
+
+
+
+<!-- <i-button bind:click="chooseimg" type="error" long="true">选择封面图</i-button> -->
+<view class="scbtn">
+<i-button bind:click="shangchuan" type="success" long="true" >上传并提交</i-button>
+</view>

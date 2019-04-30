@@ -1,0 +1,10 @@
+<view class="publish">
+    <view class="publish-box">
+        <image class="box-icon" src="http://lizmedia.cn/Public/Home/default/xcx/icons/video-icon.png"></image>
+        <text bindtap="clickchoose" id="0">发布视频</text>
+    </view>
+    <view class="publish-box">
+        <image class="box-icon" src="http://lizmedia.cn/Public/Home/default/xcx/icons/img-icon.png"></image>
+        <text bindtap="clickchoose" id="1">发布照片</text>
+    </view>    
+</view>

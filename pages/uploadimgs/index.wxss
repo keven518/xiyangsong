@@ -1,0 +1,58 @@
+page{
+  font-size: 28rpx;
+  background: #EFEFF4;
+}
+.scbtn{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.selectclass{
+color:#495060!important;
+}
+.up-wrap{
+  background: white;
+}
+.texar{
+  max-height: 100rpx;
+}
+.selectimg{
+  margin: 50rpx 0 0;
+}
+.selectimg .grid{
+  display: inline-block;
+  width: 150rpx;
+  height: 126rpx;
+  text-align: center;
+  border: 1rpx solid #999;
+  padding-top: 24rpx;
+  margin-left: 24rpx;
+  margin-bottom: 20rpx;
+  vertical-align: top;
+}
+.selectimg .grid span{
+  display: block;
+  color: #999
+}
+.imgs{
+  position: relative;
+  display: inline-block;
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 24rpx;
+  margin-bottom: 14rpx;
+  overflow: hidden;
+  vertical-align: top;
+}
+.closeicon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  background: red;
+}

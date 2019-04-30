@@ -3,65 +3,65 @@
   <view class="shop-category-box maring-bottom">
     <view class="shop-category-layout">
       <view class="shop-category-item">
-        <image class="shop-category-item-img" src="../../images/icons/cellphone.png"></image>
+        <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/cellphone.png"></image>
         <text class="shop-category-item-text">爆款手机</text>
       </view>
       <view class="shop-category-item">
-        <image class="shop-category-item-img" src="../../images/icons/supermarket.png"></image>
+        <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/supermarket.png"></image>
         <text class="shop-category-item-text">超市</text>
       </view>
       <view class="shop-category-item">
-        <image class="shop-category-item-img" src="../../images/icons/dailyUse.png"></image>
+        <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/dailyUse.png"></image>
         <text class="shop-category-item-text">生活家电</text>
       </view>
       <view class="shop-category-item">
-        <image class="shop-category-item-img" src="../../images/icons/fresh.png"></image>
+        <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/fresh.png"></image>
         <text class="shop-category-item-text">生鲜</text>
       </view>
       <view class="shop-category-item">
-        <image class="shop-category-item-img" src="../../images/icons/motherAndBaby.png"></image>
+        <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/motherAndBaby.png"></image>
         <text class="shop-category-item-text">母婴玩具</text>
       </view>
     </view>
     <view class="shop-category-layout">
       <view class="shop-category-item">
-        <image class="shop-category-item-img" src="../../images/icons/buying.png"></image>
+        <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/buying.png"></image>
         <text class="shop-category-item-text">限时抢购</text>
       </view>
       <view class="shop-category-item">
-        <image class="shop-category-item-img" src="../../images/icons/makeMoney.png"></image>
+        <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/makeMoney.png"></image>
         <text class="shop-category-item-text">赚钱</text>
       </view>
       <view class="shop-category-item">
-        <image class="shop-category-item-img" src="../../images/icons/assemble.png"></image>
+        <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/assemble.png"></image>
         <text class="shop-category-item-text">拼购</text>
       </view>
       <view class="shop-category-item">
-        <image class="shop-category-item-img" src="../../images/icons/electricalAppliances.png"></image>
+        <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/electricalAppliances.png"></image>
         <text class="shop-category-item-text">家电</text>
       </view>
       <view class="shop-category-item">
-        <image class="shop-category-item-img" src="../../images/icons/signIn.png"></image>
+        <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/signIn.png"></image>
         <text class="shop-category-item-text">签到有礼</text>
       </view>
     </view>
   </view>
   <view class="shop-hot maring-bottom">
     <view class="shop-hot-item item1">
-      <image class="shop-hot-item-img" src="../../images/1.png"></image>
+      <image class="shop-hot-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/1.png"></image>
     </view>
     <view class="shop-hot-item">
-      <image class="shop-hot-item-img" src="../../images/1.png"></image>
+      <image class="shop-hot-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/1.png"></image>
     </view>
     <view class="shop-hot-item">
-      <image class="shop-hot-item-img" src="../../images/1.png"></image>
+      <image class="shop-hot-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/1.png"></image>
     </view>
   </view>
   <view class="shop-special maring-bottom">
-    <image class="shop-specia-image" src="../../images/special.gif"></image>
+    <image class="shop-specia-image" src="http://lizmedia.cn/Public/Home/default/xcx/special.gif"></image>
   </view>
   <view class="goods-group">
-    <navigator class="goods-item" url="../product/detail?productId={{item.id}}" hover-class="changestyle" wx:for="{{productData}}">
+    <navigator class="goods-item" url="../product/detail?productId={{item.id}}" hover-class="changestyle" wx:for="{{productData}}" wx:key="{{item.id}}">
       <image class='goods-img' src='{{item.photo_x}}'></image>
       <text class='goods-tit'>{{item.name}}</text>
       <text class='goods-info'>{{item.intro}}</text>
@@ -74,96 +74,5 @@
         </text>
       </view>
     </navigator>
-    <view class="goods-item">
-      <image class='goods-img' src='http://lizmedia.cn/Public/Home/default/xcx/sp2.jpg'></image>
-      <text class='goods-tit'>花花公子户外男款高帮休闲鞋圆头系带保暖轻便磨砂面新款潮鞋</text>
-      <text class='goods-info'>引领更好的生活趋势-理想生活 上夕阳颂</text>
-      <view class='goods-price'>
-        <text class='market-price'>
-        ￥ 90.00
-        </text>        
-        <text class='original-price'>
-        ￥ 90.00
-        </text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <image class='goods-img' src='http://lizmedia.cn/Public/Home/default/xcx/sp3.jpg'></image>
-      <text class='goods-tit'>高梵韩版轻薄羽绒服女短款2018新款秋冬修身显瘦时尚反季薄款外套</text>
-      <text class='goods-info'>引领更好的生活趋势-理想生活 上夕阳颂</text>
-      <view class='goods-price'>
-        <text class='market-price'>
-        ￥ 90.00
-        </text>        
-        <text class='original-price'>
-        ￥ 90.00
-        </text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <image class='goods-img' src='http://lizmedia.cn/Public/Home/default/xcx/sp4.jpg'></image>
-      <text class='goods-tit'>包邮摩托罗拉 Motorola婴儿宝宝监护器 监听器监控器MBP10</text>
-      <text class='goods-info'>引领更好的生活趋势-理想生活 上夕阳颂</text>
-      <view class='goods-price'>
-        <text class='market-price'>
-        ￥ 90.00
-        </text>        
-        <text class='original-price'>
-        ￥ 90.00
-        </text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <image class='goods-img' src='http://lizmedia.cn/Public/Home/default/xcx/sp5.jpg'></image>
-      <text class='goods-tit'>强生婴儿牛奶润肤露100ml小瓶装 儿童润肤滋养 宝宝润肤乳身体乳</text>
-      <text class='goods-info'>引领更好的生活趋势-理想生活 上夕阳颂</text>
-      <view class='goods-price'>
-        <text class='market-price'>
-        ￥ 90.00
-        </text>        
-        <text class='original-price'>
-        ￥ 90.00
-        </text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <image class='goods-img' src='http://lizmedia.cn/Public/Home/default/xcx/sp6.jpg'></image>
-      <text class='goods-tit'>露华浓不脱色妍薄粉饼控油遮瑕持久定妆清透自然女裸妆清爽美肤男</text>
-      <text class='goods-info'>引领更好的生活趋势-理想生活 上夕阳颂</text>
-      <view class='goods-price'>
-        <text class='market-price'>
-        ￥ 90.00
-        </text>        
-        <text class='original-price'>
-        ￥ 90.00
-        </text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <image class='goods-img' src='http://lizmedia.cn/Public/Home/default/xcx/sp1.jpg'></image>
-      <text class='goods-tit'>Haixin冰箱收纳盒保鲜盒海兴9L大容量塑料储物箱厨房密封罐米桶</text>
-      <text class='goods-info'>引领更好的生活趋势-理想生活 上夕阳颂</text>
-      <view class='goods-price'>
-        <text class='market-price'>
-        ￥ 90.00
-        </text>        
-        <text class='original-price'>
-        ￥ 90.00
-        </text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <image class='goods-img' src='http://lizmedia.cn/Public/Home/default/xcx/sp2.jpg'></image>
-      <text class='goods-tit'>美赞臣荷兰版铂睿1段850g婴儿配方奶粉 荷兰进口原装原罐</text>
-      <text class='goods-info'>引领中老年人更好的生活趋势-理想生活 上夕阳颂</text>
-      <view class='goods-price'>
-        <text class='market-price'>
-        ￥ 90.00
-        </text>        
-        <text class='original-price'>
-        ￥ 90.00
-        </text>
-      </view>
-    </view>
   </view>
 </view>

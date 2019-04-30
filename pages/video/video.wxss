@@ -38,6 +38,7 @@
 }
 .video-info{
   line-height: 40rpx;
+  height: 80rpx;
   padding: 0 20rpx;
   margin: 10rpx 0;
   box-sizing: border-box;

@@ -12,6 +12,10 @@ var config = {
     // 下面的地址配合云端 Server 工作
     host,
 
+    MAP_API_KEY: 'DLHBZ-JEJ64-YRGUG-D2MWJ-6NL5F-HZB7J',
+
+    WEATHER_API_KEY: '25299823461743b18a1d44dfb0f8925d',
+
     // 登录地址，用于建立会话
     loginUrl: `https://${host}/login`,
 
