@@ -24,7 +24,7 @@
     "pages/order/pays",
     "pages/play/index",
     "pages/play/video/index",
-    "pages/articledetail/detail"    
+    "pages/articledetail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -69,5 +69,6 @@
         "text": "我的"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
