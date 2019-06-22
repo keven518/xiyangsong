@@ -69,6 +69,7 @@ Page({
     }
   },
   scrollbottom(){
+    console.log(1)
     var { isfollow, arrlist, count, page, classify_id, openid } = this.data
     page++
     console.log(page, count)

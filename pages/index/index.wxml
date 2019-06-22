@@ -13,14 +13,27 @@
   </view>
 </view> -->
 <scroll-view class='articles' style="width:100vw;height: calc(100vh - 45px)" scrollY="true" bindscrolltolower="scroll">
-<view >  
-  <text class='weather'>{{weatherDate.basic.location}} 天气：{{weatherDate.now.cond_txt}}温度：{{weatherDate.now.tmp}}风向：{{weatherDate.now.wind_dir}}风力：{{weatherDate.now.wind_sc}}风速：{{weatherDate.now.wind_spd}}公里/小时相对湿度：{{weatherDate.now.hum}}云量：{{weatherDate.now.cloud}}</text>
+<view >
+  <view class='weather-box'>
+  <view class='weather'>
+    <view class='weather-dt'>地区：{{weatherDate.basic.location}}</view>
+    <view class='weather-dt'>天气：{{weatherDate.now.cond_txt}}</view>
+  </view>
+  <view class='weather'>
+    <view class='weather-dt'>温度：{{weatherDate.now.tmp}}℃</view>
+    <view class='weather-dt'>风向：{{weatherDate.now.wind_dir}}</view>
+  </view>
+  <view class='weather'>
+    <view class='weather-dt'>湿度：{{weatherDate.now.hum}}</view>
+    <view class='weather-dt'>风力：{{weatherDate.now.wind_sc}}</view>
+  </view>
+  </view>  
   <view class='article' wx:for='{{articles}}' data-aid='{{item.id}}' wx:key="id" bindtap='onArticleClicked' >
     <view class='articleTit'>{{item.title}}</view>
     <image class='articleImgA' src='{{"http://lizmedia.cn"+item.litpic}}' mode="widthFix"></image>
     <view class='articleInfo'>
       <text class='articleChannel'>{{item.category_name}}</text>
-      <text class='articleInfoTxt'>阅读： {{item.click}}</text>
+      <!-- <text class='articleInfoTxt'>阅读： {{item.click}}</text> -->
       <text class='articleInfoTxt'>评论： {{item.comment_num}}</text>
     </view>
   </view>

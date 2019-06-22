@@ -8,11 +8,19 @@ Page({
   data: {
     newList: [{id: 0, name:'推荐'}],
     articles: null,
+    location: {},
     artId: 0,
     showMd:false,
     count:0,
     page: 1,
     weatherDate: {}
+  },
+  scl(res) {
+    res.data.data.map((data) => {
+      data.click = data.click * 10 + Math.floor(Math.random() * 10)
+    })
+    console.log('scl-res: ', res);
+    return res;
   },
   onArticleClicked(e) {
     // 点击文章列表，跳转详情页面
@@ -53,10 +61,11 @@ Page({
       },
       success: (res)=>{
         console.log('tj-res: ', res)
-        res.data.data.click *= 10
-        res.data.data.map((data) => {
-          data.click = data.click * 10 + Math.floor(Math.random() * 10)
-        })
+        
+        this.scl(res);
+        // res.data.data.map((data) => {
+        //   data.click = data.click * 10 + Math.floor(Math.random() * 10)
+        // })
         console.log('tj-res3: ', res)
         this.setData({
           articles: res.data.data
@@ -70,6 +79,9 @@ Page({
       success: res => {
         // 此处只能获取到当前位置的经纬度（坐标）
         console.log('zb-res: ', res);
+        that.setData({
+          location: res
+        })
         wx.request({
           url: 'https://free-api.heweather.net/s6/weather/now',
           header: {
@@ -242,6 +254,7 @@ Page({
         },
         success: (res) => {
           if (pg <= count) {
+            this.scl(res);
             this.setData({
               articles: articles.concat(res.data.data),
               count: res.data.count
@@ -264,7 +277,7 @@ Page({
           'content-type': 'application/json'
         },
         success: (res) => {
-          
+          this.scl(res);          
           this.setData({
             articles: articles.concat(res.data.data)
           })

@@ -1,0 +1,68 @@
+<!-- index.wxml -->
+<view style="height:100%">
+  <swiper current="{{current}}" bindchange="onSwiperChange" style="height: 100%">
+    <swiper-item style="overflow:auto" class="leftBox">
+     <view class='articleInfo'>
+        <text class='articleInfoTxt'>发一个随拍</text>
+        <text class='articleInfoTxt2'>允许访问即可进入拍摄</text>
+      </view>
+      <view class='articleInfo2'>
+        <text class='articleInfoTxt3'>启用相机访问权限</text>
+      </view>
+      <view class='articleInfo3'>
+        <text class='articleInfoTxt4'>启用麦克风访问权限</text>
+      </view>
+    </swiper-item>
+    <swiper-item style="height: 100vh">
+      <view class="container-shirtVideo">
+        <view class="imageWrap" style="transform:translateY({{transformHeight}}px)">
+          <block wx:for="{{videos}}" wx:for-item="course" wx:key="*this" wx:for-index="idx">
+            <video id="{{'vId-'+idx}}" src='{{course.videoUrl}}' style="width:100%;height:100%" loop="true">
+            </video>
+          </block>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item style="overflow:auto" class="rightBox">
+      <scroll-view scroll-y style="width: auto;overflow:hidden;">
+        <view class='imgBox'>
+          <image mode='aspectFill'  class='imageBox' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559894609112&di=b3bb72b45940ebef52686f5eaf556a90&imgtype=0&src=http%3A%2F%2Fpic.rmb.bdstatic.com%2Fcd2476300bbad8dfcfff1d277b79401a.jpeg'></image>
+        </view>
+        <view class='headSculpture'>
+          <view class='headImg'>
+            <image class='headImage' mode='aspectFill' src='http://guke.liztrip.cn/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190607130944.jpg'></image>
+          </view>
+          <view class='focusBtn'>+ 关注</view>  
+        </view>      
+        <view class='userInfo'>        
+          <view class='line'></view>
+          <text class='userTxt'>亲亲子衿</text>
+        </view>
+        <view class='userDescribe'>        
+          <view class='line'></view>
+          <text class='userDescribeTxt'>青青子衿，悠悠我心。 
+  但为君故，沉吟至今。 
+  呦呦鹿鸣，食野之苹。 
+  我有嘉宾，鼓瑟吹笙。</text>
+        </view>            
+        <view class='userInfo'>        
+          <view class='line'></view>
+          <text class='userTxt'>作品</text>
+        </view>
+        <view class='works'>
+          <image class='worksImg' mode='aspectFill' src='http://img5.imgtn.bdimg.com/it/u=3142756047,3403175922&fm=26&gp=0.jpg'></image>
+          <image class='worksImg' mode='aspectFill' src='http://img4.imgtn.bdimg.com/it/u=272042200,3884779398&fm=26&gp=0.jpg'></image>
+          <image class='worksImg' mode='aspectFill' src='http://img4.imgtn.bdimg.com/it/u=4190748515,2155414659&fm=11&gp=0.jpg'></image>
+          <image class='worksImg' mode='aspectFill' src='http://img5.imgtn.bdimg.com/it/u=3142756047,3403175922&fm=26&gp=0.jpg'></image>
+          <image class='worksImg' mode='aspectFill' src='http://img4.imgtn.bdimg.com/it/u=272042200,3884779398&fm=26&gp=0.jpg'></image>
+          <image class='worksImg' mode='aspectFill' src='http://img4.imgtn.bdimg.com/it/u=4190748515,2155414659&fm=11&gp=0.jpg'></image>
+          <image class='worksImg' mode='aspectFill' src='http://img5.imgtn.bdimg.com/it/u=3142756047,3403175922&fm=26&gp=0.jpg'></image>
+          <image class='worksImg' mode='aspectFill' src='http://img4.imgtn.bdimg.com/it/u=272042200,3884779398&fm=26&gp=0.jpg'></image>
+          <image class='worksImg' mode='aspectFill' src='http://img4.imgtn.bdimg.com/it/u=4190748515,2155414659&fm=11&gp=0.jpg'></image>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+  <cover-view bindtouchstart="touchStart" bindtouchend="touchEnd" class="controls" >
+  </cover-view>
+</view>

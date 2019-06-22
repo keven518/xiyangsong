@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/shirtvideo/index",
+    "pages/vd/vd",
     "pages/video/video",
     "pages/publish/index",
     "pages/upload/index",
@@ -26,12 +28,13 @@
     "pages/order/pays",
     "pages/play/index",
     "pages/play/video/index",
-    "pages/articledetail/detail"    
+    "pages/articledetail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#d53c3e",
     "navigationBarTitleText": "商城",
+    "navigationStyle": "custom",
     "navigationBarTextStyle": "white"
   },
   "permission": {
@@ -76,5 +79,6 @@
         "text": "我的"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

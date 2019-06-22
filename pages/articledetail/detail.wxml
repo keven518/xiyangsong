@@ -5,7 +5,7 @@
   <navigator class='act-main-top' url='../userinfo/userinfo' hover-class='kv-hover'>
     <view class='date'>{{date}}
      <!-- <view class='cnt'>openid：{{openid}}</view> -->
-  <view class='cnt'>阅读量：{{cnt}}</view>
+  <!-- <view class='cnt'>阅读量：{{cnt}}</view> -->
   </view>
   </navigator>
   <view wx:if="{{audio}}" class="audio-box">

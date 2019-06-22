@@ -1,21 +1,23 @@
 <!--pages/video/video.wxml-->
 <view class='videoPage'>
-  <view class="video-group">
-    <view class="video-item" wx:for="{{arrlist}}" wx:key="">
-      <view class='item' bindtap='turndetail' data-type="{{item.type}}" data-id="{{item.id}}">
-        <image class='video-img' src='{{item.cover_image}}'></image>
-        <text class='video-info'>{{item.content}}</text>
-        <view class='video-dec'>
-          <view class='user-info'>
-            <image class='userPho' src="{{item.image}}"></image>
-            <text class='userName'>{{userInfo.nickName}}</text>
-          </view>
-          <view class='comment'>
-            <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
-            <text class='commentNum'>{{item.report}}</text>
+  <scroll-view scrollY="true" class="scrolly" style="height: calc(100vh - 45px)" bindscroll="scroll" bindscrolltolower="scrollbottom">
+    <view class="video-group">
+      <view class="video-item" wx:for="{{arrlist}}" wx:key="">
+        <view class='item' bindtap='turndetail' data-type="{{item.type}}" data-id="{{item.id}}">
+          <image class='video-img' src='{{item.cover_image}}'></image>
+          <text class='video-info'>{{item.content}}</text>
+          <view class='video-dec'>
+            <view class='user-info'>
+              <image class='userPho' src="{{item.image}}"></image>
+              <text class='userName'>{{userInfo.nickName}}</text>
+            </view>
+            <view class='comment'>
+              <image class='commentImg' src='http://lizmedia.cn/Public/Home/default/xcx/ax.png'></image>
+              <text class='commentNum'>{{item.report}}</text>
+            </view>
           </view>
         </view>
       </view>
     </view>
-  </view>
+  </scroll-view>
 </view>
