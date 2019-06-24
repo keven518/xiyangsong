@@ -28,9 +28,9 @@ Page({
               camera: 'back',
               success(res) {
       
-                if (parseFloat(res.size / 1024 / 1024) > 30) {
+                if (parseFloat(res.size / 1024 / 1024) > 50) {
                   $Toast({
-                    content: '选择的视频最大30兆',
+                    content: '选择的视频最大50兆',
                     type: 'warning'
                   });
                 } else {
