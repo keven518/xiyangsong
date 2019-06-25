@@ -34,7 +34,6 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#d53c3e",
     "navigationBarTitleText": "商城",
-    "navigationStyle": "custom",
     "navigationBarTextStyle": "white"
   },
   "permission": {
