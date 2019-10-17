@@ -1,14 +1,16 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/user/user",
+    "pages/play/video/index",
+    "pages/video/video",
+    "pages/articledetail/detail",
     "pages/shirtvideo/index",
     "pages/vd/vd",
-    "pages/video/video",
     "pages/publish/index",
     "pages/upload/index",
     "pages/uploadimgs/index",
     "pages/shop/shop",
-    "pages/user/user",
     "pages/product/detail",
     "pages/search/search",
     "pages/user/dingdan",
@@ -26,9 +28,11 @@
     "pages/try/index",
     "pages/try/list/index",
     "pages/order/pays",
-    "pages/play/index",
-    "pages/play/video/index",
-    "pages/articledetail/detail"
+    "pages/webrtc/webrtc-room/index/index",
+    "pages/webrtc/webrtc-room/room/room",
+    "pages/mall/index",
+    "pages/user/shoucang",
+    "pages/play/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -48,16 +52,16 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/video/video",
         "iconPath": "images/icons/home.png",
         "selectedIconPath": "images/icons/home-on.png",
         "text": "首页"
       },
       {
-        "pagePath": "pages/video/video",
-        "iconPath": "images/icons/video.png",
-        "selectedIconPath": "images/icons/video-on.png",
-        "text": "视频"
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icons/article.png",
+        "selectedIconPath": "images/icons/article-on.png",
+        "text": "文章"
       },
       {
         "pagePath": "pages/publish/index",

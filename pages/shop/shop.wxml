@@ -1,7 +1,7 @@
 <!--pages/shop/shop.wxml-->
 <view class="page">
   <view class="shop-category-box maring-bottom">
-    <view class="shop-category-layout">
+    <!-- <view class="shop-category-layout">
       <view class="shop-category-item">
         <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/cellphone.png"></image>
         <text class="shop-category-item-text">爆款手机</text>
@@ -22,7 +22,7 @@
         <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/motherAndBaby.png"></image>
         <text class="shop-category-item-text">母婴玩具</text>
       </view>
-    </view>
+    </view> -->
     <view class="shop-category-layout">
       <view class="shop-category-item">
         <image class="shop-category-item-img" src="http://lizmedia.cn/Public/Home/default/xcx/icons/buying.png"></image>

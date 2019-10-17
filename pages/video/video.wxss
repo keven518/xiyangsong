@@ -12,13 +12,25 @@
   justify-content: space-between;
 }
 .video-item{
-  width: 49%;
-  height: 500rpx;
+  width: 100%;
+  max-height: 600rpx;
   background: #fff;
   margin-bottom: 16rpx;
 }
+.item{
+  position: relative;
+}
+.play-box{
+  width: 80rpx;
+  height: 100rpx;
+  position: absolute;
+  opacity:1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
 .video-img{
-  height: 300rpx;
+  height: 460rpx;
   width: 100%;
   background: url(http://lizmedia.cn/xyhcms/uploads/img1/20190427/5cc3ca5d82e47.jpg);  
   border-radius: 12rpx 12rpx 0 0;
@@ -38,13 +50,18 @@
   white-space: nowrap;
 }
 .video-info{
-  line-height: 40rpx;
-  height: 80rpx;
-  padding: 0 20rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.6),rgba(0,0,0,1));
+  line-height: 50rpx;
+  max-height: 160rpx;
+  color: #fff;
+  padding: 0 20rpx 10rpx 20rpx;
   margin: 10rpx 0;
   box-sizing: border-box;
-  font-size: 28rpx;
-  color: #999;
+  font-size: 34rpx;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -56,25 +73,12 @@
   padding: 0 20rpx;
   box-sizing: border-box;
   height: 50rpx;
-  margin-top: 20rpx; 
-}
-.user-info{
-  width: 65%;
-  float: left;
-  height: 100%;
+  margin-top: 10rpx; 
 }
 .userPho{
-  width: 50rpx;
-  height: 50rpx;
-  margin-top: 6rpx;
-  display: block;
-  float: left;
   border-radius: 50%;
 }
-.comment{
-  margin-top: 10rpx;
-}
-.commentImg{  
+.commentImg, .shareImg, .userPho{  
   width: 50rpx;
   height: 50rpx;
 }
@@ -84,9 +88,19 @@
   line-height: 50rpx;
   font-size: 24rpx;
 }
-.comment{
-  width: 35%;
+.shareaTxt{  
+  margin-left: 10rpx;
+  height: 50rpx;  
+  line-height: 50rpx;
+  font-size: 24rpx;
+  color:#e52e2d;
+
+}
+.comment, .share, .user-info{
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
   float: left;
   height: 100%;
   display: flex;
+  margin-right: 20rpx; 
 }

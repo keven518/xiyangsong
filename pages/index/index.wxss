@@ -73,10 +73,10 @@
 
 .articleTit{
   width: 100%;
-  line-height: 40rpx;
   box-sizing: border-box;
-  font-size: 32rpx;
-  font-weight:600;
+  font-size: 38rpx;
+  line-height: 50rpx;
+  font-weight:bold;
   color: #333;
   display: -webkit-box;
   -webkit-box-orient: vertical;

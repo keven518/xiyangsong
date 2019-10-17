@@ -121,9 +121,11 @@ Page({
           })
         }
         // 加载文章
-        wx.request({
-          url: 'https://lizmedia.cn/xyhcms/index.php?s=/kv/showArticle/id/' + options.art_id,
-          data: { open_id: app.globalData.userInfo.openid },
+        let artId = options.art_id || 1356
+        let openId = app.globalData.userInfo.openid // 'ojhL94_zyMwEMBnEuPzB4HlxzVaU' || 
+        wx.request({          
+          url: 'https://lizmedia.cn/xyhcms/index.php?s=/kv/showArticle/id/' + artId,
+          data: { open_id: openId },
           method: 'GET',
           header: {
             'content-type': 'application/json'

@@ -25,6 +25,8 @@ Page({
   onArticleClicked(e) {
     // 点击文章列表，跳转详情页面
     let aid = e.currentTarget.dataset.aid;
+    console.log('aid: ', aid)
+    // return
 
     wx.navigateTo({
       url: '/pages/articledetail/detail?art_id=' + aid + '&cid=' +  this.data.artId,

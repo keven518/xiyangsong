@@ -77,13 +77,14 @@ Page({
     if (classify_id == 0){
 
       api.getinfos({ openid, p: page }).then(res => {
-          var { code, data, count } = res;
-          this.setData({
-            arrlist: arrlist.concat(data),
-            count,
-            page
-          })
+        var { code, data, count } = res;
+        this.jsdz(data)
+        this.setData({
+          arrlist: arrlist.concat(data),
+          count,
+          page
         })
+      })
   
     } else {
       if (page > count) {
@@ -137,6 +138,7 @@ Page({
       api.getinfos({ openid }).then(res => {
         console.log('onLoad - res: ', res);
         var { code, data, count } = res;
+        this.jsdz(data)
         this.setData({
           arrlist: data,
           classify_id: 0,
@@ -145,6 +147,7 @@ Page({
         })
       })
     })
+    wx.showShareMenu();  // 新增分享功能
     
 
   },
@@ -268,6 +271,11 @@ Page({
   mywork(){
     wx.navigateTo({
       url: '../../mywork/index',
+    })
+  },
+  jsdz(data) {
+    data.map((data) => {
+      data.report = Math.floor(Math.random() * (9999 - 1000)) + 1000
     })
   },
   /**

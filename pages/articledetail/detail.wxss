@@ -129,7 +129,7 @@
 .username .date{
   float: right;
   font-size: 10px;
-  width:80px;
+  width:100px;
   text-align: center; 
   color: #aaa;
 }
@@ -180,4 +180,49 @@ border-top:none;
   line-height:60rpx;
   border-color:white;
   border-top-color:#ccc;
+}
+.box_tit{
+  margin-bottom: 20rpx;
+  display: block;
+  font-size: 30rpx;
+  font-weight: bold;
+  width: 100%;
+}
+.hot_recommend{
+  padding: 8px;
+}
+.recom_item{
+  display: flex;
+}
+.recom_img{
+  width: 240rpx;
+  height: 160rpx;
+  background: #900;
+  margin-right: 20rpx; 
+}
+.recom_right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.recom_txt{
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 46rpx;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all; 
+}
+.recom_info{
+  font-size: 24rpx;
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.p-l-8{
+  padding-left: 8px;
 }

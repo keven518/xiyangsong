@@ -3,13 +3,13 @@
   <view class='top-box'>
     <image class="top-box-userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <view class='top-box-userinfo'>
-      <text class='top-box-nickName'>{{userInfo.nickName}}</text>
+      <text class='top-box-nickName'>{{userName}}</text>
       <text class='authentication'>申请认证</text>
       <text class="iconfont icon-jiantou opsition"></text>
     </view>
   </view>
   <view class='user-info-a'>
-    <view class='user-info-box'>
+    <view class='user-info-box' bindtap="toKejiao">
       <text class='user-info-num'>30</text>
       <text class='user-info-tit'>订单</text>
     </view>
@@ -53,6 +53,12 @@
     </view>
   </view>
   <view class='cells-group'>
+    <view class='cells-item' bindtap='kzb'>
+      <text class='cells-item-txt'>开直播</text>
+      <view class='cells-item-img-box'>
+        <image class='cells-item-img' src='http://lizmedia.cn/Public/Home/default/xcx/icons/arrow-h.png'></image>
+      </view>
+    </view>
     <view class='cells-item'>
       <text class='cells-item-txt'>我的钱包</text>
       <view class='cells-item-img-box'>

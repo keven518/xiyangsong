@@ -18,7 +18,22 @@
     <template is="wxParse" data="{{wxParseData:detail.nodes}}" />
   </view>
 </view>
+<view class='hot_recommend'>
+  <text class='box_tit'>热门推荐</text>
+  <view class='recom_item'>
+    <image class='recom_img'></image>
+    <view class='recom_right'>
+      <text class="recom_txt">热门推荐热门推荐热门推荐热门推荐热门推荐热门推荐热门推荐热门推荐热门推荐热门推荐热门推荐</text>
+      <view class='recom_info'>
+      <text class='recom_pl'>评论：230</text>
+      <text class='recom_sj'>2019-05-12</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- // 评论 -->
 <view class='comments'>
+  <text class='box_tit p-l-8'>最新评论</text>
   <view class='commentList' wx:if="{{comments}}">
     <view class='comment' wx:for='{{commentsList}}' wx:key="id">
       <view class='avatar'>

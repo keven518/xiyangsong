@@ -48,6 +48,42 @@
   </view>
 
   <view class="bottom-comment">
+    <view class='t-box' style='margin-left: 80rpx;'>
+    <image src='./dz.png' mode='aspectFit'/>
+    <text>点赞</text>
+    </view>
+    <view class="t-box">
+    <image src='./pl.png' mode='aspectFit'/>
+    <text  bindtap='showshadow'>评论</text>    
+    </view>
+    <view class='t-box'>
+    <image src='./fx.png' mode='aspectFit'/>
+    <text>分享</text>
+    </view>
+  </view>
+
+
+  <!-- 遮罩层 -->
+  <view class="shadow" wx:if="{{chooseSize}}" bindtap='hideModal'></view>
+  <!-- 上滑高度 -->
+  <view class='choosen' wx:if="{{chooseSize}}" animation='{{animationData}}'>
+  <!-- 内容 -->
+    <view class="container-box">
+      <i-row>
+      <i-col span="{{isfocus ? 19 : 24}}">
+        <input placeholder='说点什么...' type="text" bindfocus="commfocus" bindblur="commblur" bindinput='inputcomm' confirm-type="send" bindconfirm="keysend" value="{{ inputtxt }}" cursor-spacing='20'></input>
+      </i-col>
+      <i-col span="5" wx:if="{{isfocus}}">
+        <view class="send-btn {{inputtxt.length > 0 ? 'select-send-btn' : ''}}" bindtap="keysend">发送</view>
+      </i-col>
+    </i-row>
+    </view>
+  </view>
+
+
+
+
+  <view class="bottom-comment" style='display: none'>
     <i-row>
       <i-col span="{{isfocus ? 19 : 24}}">
         <input placeholder='说点什么...' type="text" bindfocus="commfocus" bindblur="commblur" bindinput='inputcomm' confirm-type="send" bindconfirm="keysend" value="{{ inputtxt }}" cursor-spacing='20'></input>
